@@ -46,8 +46,8 @@
           v-for="(feature, index) in features"
           :key="index"
         >
-          <img :src="feature.icon" class="w-8 h-6 self-center md:self-start ml-0 md:ml-6" alt="" />
-          <h3 class="mt-4 font-semibold text-xs md:text-sm md:text-xl self-center md:self-start ml-0 md:ml-7">{{ feature.title }}</h3>
+          <img :src="feature.icon" class="w-8 h-6 self-center md:self-start" alt="" />
+          <h3 class="mt-4 font-semibold text-xs md:text-sm md:text-xl self-center md:self-start">{{ feature.title }}</h3>
           <p class="mt-2 feature-text leading-tight font-normal text-xs md:text-sm">{{ feature.text }}</p>
         </div>
       </section>
@@ -164,9 +164,9 @@ export default {
   height: 90%;
   transform: skewX(-10deg);
 }
-.feature-text {
+/* .feature-text {
   width: 250px;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .feature-text {
@@ -174,5 +174,4 @@ export default {
   }
   
 }
-
 </style>
